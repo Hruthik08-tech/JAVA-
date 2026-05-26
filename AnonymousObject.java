@@ -1,7 +1,6 @@
 
 class A 
 {
-     
     public A()
     {
         System.out.println("Object: A is created");
@@ -44,7 +43,7 @@ class Computer
     }
 }
 
-public class BTS 
+public class AnonymousObject 
 {
     public static void main(String[] args) 
     {
@@ -54,9 +53,17 @@ public class BTS
 
         A obj = new A();
         obj.show();
-
-        new B();
-
-
+        
+        /**
+         * Anonymous object: 
+         * @description An object created without reference variable 
+         * @uses 
+         *      - When you want to use an object method only once 
+         *      - They are frequently passed as arguments to methods or constructors
+         */
+        new B().show();
     }
 }
+
+
+
