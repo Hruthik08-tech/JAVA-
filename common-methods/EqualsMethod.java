@@ -1,4 +1,49 @@
 
+
+/* The perfect equals method 
+    Write a unit test to check if the equals method is working correctly 
+     - Reflexive 
+     - Symmetric
+     - Consistent
+*/
+
+
+class Person
+{
+    String name;
+    int age;
+
+    public Person(String name, int age)
+    {
+        this.name = name;
+        this.age = age;
+    }
+
+    @Override
+    public boolean equals(Object o)
+    {   
+        // Fast check if both references point to same memory address 
+        if (this == o)
+        {
+            return true;
+        }
+
+        // Use the instance of operator to check if the argument is off correct type 
+        if (!(o instanceof Person))
+        {
+            return false;
+        }
+
+        // Cast the arguument to correct type 
+        Person p = (Person) o;
+
+        // Check each field in the object 
+        return p.name == this.name && p.age == this.age;
+    }
+
+}
+
+
 class Dog
 {
     String name;
