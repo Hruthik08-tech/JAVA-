@@ -1,3 +1,4 @@
+
 class Laptop extends Object
 {
     public String model;

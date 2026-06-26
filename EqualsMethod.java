@@ -1,5 +1,7 @@
 
 
+
+
 /* The perfect equals method 
     Write a unit test to check if the equals method is working correctly 
      - Reflexive 

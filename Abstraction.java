@@ -1,4 +1,4 @@
-package Inheritance;
+
 
 /**
  * Abstraction: Making a class abstract prevents from creating an object of that class. 

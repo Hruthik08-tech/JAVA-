@@ -1,4 +1,3 @@
-package Inheritance;
 
 class Animal
 {
